@@ -1,4 +1,6 @@
-If you want to run a command for Windows software written in C++, you can use the system() function in C++ to execute system commands. Here's a basic example:
+If you want to run a command for Windows software written in C++, you can use the system() function in C++ to execute system commands. 
+
+# Here's a basic example:
 Example code:
 #include <iostream>
 #include <cstdlib> // for system()
@@ -19,7 +21,8 @@ int main() {
 
     return 0;
 }
-Important Notes:
+# Important Notes:
+
 Security: Be cautious when using system(), especially with user input, as it can lead to command injection vulnerabilities.
 Portability: The command you provide to system() is executed by the default shell (e.g., Command Prompt on Windows). This means that commands might not be portable across different operating systems.
 Return Value: The return value of system() is the exit status of the shell command executed, which can help you determine if it succeeded or failed.
